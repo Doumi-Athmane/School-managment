@@ -1,0 +1,44 @@
+.article {
+    margin-top: 80px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #b8b5ff;
+    box-shadow: #7868e6 2px 2px 4px;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    min-height: 100vh
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 4%;
+    margin-left: 8%;
+    box-shadow: rgb(119, 128, 209) 2px 2px 5px;
+    padding: 2.5%;
+}
+
+.part-text {
+    flex: 1;
+}
+
+.part-img {
+    margin-left: 8%;
+    flex: 1;
+}
+
+form {
+    margin: 20px;
+}

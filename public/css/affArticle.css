@@ -1,0 +1,9 @@
+.article {
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+h2 {
+    color: blue;
+}

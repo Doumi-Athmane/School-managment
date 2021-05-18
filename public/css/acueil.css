@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+}
+
+.Diapo {
+    flex: 8;
+}
+
+.diaporama {
+    height: 500px;
+    overflow-y: hidden;
+    background-color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.slides {
+    height: calc(500px * 4);
+    animation: defilement 12s infinite;
+    margin: 0px 2% 0px 2%;
+}
+
+.slides:hover {
+    animation-play-state: paused;
+}
+
+@keyframes defilement {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-500px);
+    }
+    50% {
+        transform: translateY(-1020px);
+    }
+    75% {
+        transform: translateY(-1550px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    margin: 0% 0% 2% 0%;
+}
+
+.content {
+    flex: 14;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.card {
+    flex: 1;
+    min-width: 10%;
+    background-color: white;
+    margin: 4px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgb(119, 128, 209) 2px 2px 5px;
+    position: static !important;
+    margin: 30px;
+}
+
+.pic {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}

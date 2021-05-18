@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+}
+
+.content {
+    flex: 14;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.card {
+    box-shadow: rgb(119, 128, 209) 2px 2px 5px;
+    padding: 3%;
+    margin-bottom: 5%;
+}

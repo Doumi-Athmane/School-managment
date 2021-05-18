@@ -1,0 +1,140 @@
+/*body {
+    display: flex;
+    flex-direction: column;
+    height: 160%;
+    width: 100%;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+}*/
+
+.topBar {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(170, 169, 206);
+    background-color: #dedfe7;
+}
+
+.topBar>:nth-child() {
+    flex: 1;
+}
+
+.Diapo {
+    flex: 8;
+    width: 90%;
+    margin: 2%;
+}
+
+.menu {
+    flex: 1;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0%;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    flex: 1;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: rgb(57, 56, 161);
+    border-bottom: 2px solid rgb(10, 2, 85);
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px rgb(44, 32, 110);
+    background-color: rgb(159, 177, 224);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: rgb(119, 128, 209);
+}
+
+.deroulant>a::after {
+    font-size: 12px;
+}
+
+.item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: solid black 1px;
+    background-color: rgb(149, 123, 207);
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: rgb(34, 32, 155);
+}
+
+.footer {
+    flex: 2;
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgb(119, 128, 209);
+}
+
+h1 {
+    color: blueviolet;
+}
